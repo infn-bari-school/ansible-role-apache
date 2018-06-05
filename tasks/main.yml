@@ -1,5 +1,7 @@
 ---
 # tasks file for apache
-- import_tasks: install.yml
-#- import_tasks: configure.yml
-- import_tasks: service.yml
+- name: Install httpd Package
+  yum: name=httpd state=present
+
+- name: Start and Enable httpd service
+  service: name=httpd state=started enabled=yes
