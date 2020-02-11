@@ -1,6 +1,7 @@
 galaxy_info:
   author: marica.antonacci@gmail.com
   description: Install and configure apache
+  role_name: apache
   company: INFN
   license: Apache
   min_ansible_version: 2.0
